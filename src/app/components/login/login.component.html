@@ -1,0 +1,9 @@
+<div class="card">
+  <form novalidate (ngSubmit)="login()">
+    <input type="text" name="username" [(ngModel)]="loginForm.username"> <br>
+    <input type="password" name="password" [(ngModel)]="loginForm.password"> <br>
+    <input type="submit" value="Log In">
+  </form>
+
+  {{ loginForm | json}}
+</div>
